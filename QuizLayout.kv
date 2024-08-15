@@ -1,0 +1,233 @@
+MDScreen:
+    name: 'quiz1'
+    md_bg_color: 1, 0.753, 0.796, 1
+    MDFloatLayout:
+        md_bg_color: 1, 0.753, 0.796, 1  
+        MDLabel:
+            text: 'Student No'
+            pos_hint: {'center_x':.539, 'center_y': .91}
+            font_name: 'assets/Poppins-Regular.ttf'        
+            font_size:'20sp'
+        MDFloatLayout:
+            size_hint: .85, .08
+            pos_hint: {'center_x':.61, 'center_y': .90}
+            canvas:
+                Color:                    
+                    rgb:(0, 0, 0, 1)
+                RoundedRectangle:
+                    size:(250,50)
+                    pos:self.pos
+                    radius:[15]
+            TextInput:             
+                id: studentnumber   
+                hint_text:'Student Number'                
+                size_hint: 1, None
+                size:120,50
+                pos_hint: {'center_x':.5, 'center_y': .5}
+                height: self.minimum_height
+                multiline:False
+                cursor_color: 1, 170/255, 23/255, 1
+                cursor_width: '2sp'
+                foreground_color: 1, 1, 1, 1               
+                background_color: 0,0,0,0
+                padding:15
+                font_name: 'assets/Poppins-Regular.ttf'        
+                font_size: '18sp'
+        MDFloatLayout:
+            size_hint: .65, .08
+            pos_hint: {'center_x':.30, 'center_y': .78}
+            MDLabel:
+                text:'Last Name'
+                pos_hint: {'center_x':.6, 'center_y': .88}
+                font_name: 'assets/Poppins-Regular.ttf'        
+                font_size:'20sp'
+        MDFloatLayout:
+            size_hint: .85, .08
+            pos_hint: {'center_x':.61, 'center_y': .80}
+            canvas:
+                Color:                    
+                    rgb:(0, 0, 0, 1)
+                RoundedRectangle:
+                    size:(250,50)
+                    pos:self.pos
+                    radius:[15]
+            TextInput:
+                id: lastname 
+                hint_text:'Last Name'                
+                size_hint: 1, None
+                size:120,50
+                pos_hint: {'center_x':.5, 'center_y': .5}
+                height: self.minimum_height
+                multiline:False
+                cursor_color: 1, 170/255, 23/255, 1
+                cursor_width: '2sp'
+                foreground_color: 1, 1, 1, 1                
+                background_color: 0,0,0,0
+                padding:15
+                font_name: 'assets/Poppins-Regular.ttf'        
+                font_size: '18sp'
+        MDFloatLayout:
+            size_hint: .65, .08
+            pos_hint: {'center_x':.80, 'center_y': .78}
+            MDLabel:
+                text:'First Name'
+                pos_hint: {'center_x':.575, 'center_y': .88}
+                font_name: 'assets/Poppins-Regular.ttf'        
+                font_size:'20sp'
+
+        MDFloatLayout:
+            size_hint: .85, .08
+            pos_hint: {'center_x':1.1, 'center_y': .80}
+            canvas:
+                Color:                    
+                    rgb:(0, 0, 0, 1)
+                RoundedRectangle:
+                    size:(250,50)
+                    pos:self.pos
+                    radius:[15]
+            TextInput:    
+                id: firstname            
+                hint_text:'First Name'                
+                size_hint: 1, None
+                pos_hint: {'center_x':.5, 'center_y': .5}
+                height: self.minimum_height
+                multiline:False
+                cursor_color: 1, 170/255, 23/255, 1
+                cursor_width: '2sp'
+                foreground_color: 1, 1, 1, 1               
+                background_color: 0,0,0,0
+                padding:15
+                font_name: 'assets/Poppins-Regular.ttf'        
+                font_size: '18sp'
+        MDFloatLayout:
+            size_hint: .65, .08
+            pos_hint: {'center_x':.30, 'center_y': .68}
+            MDLabel:
+                text:'Course'
+                pos_hint: {'center_x':.6, 'center_y': .88}
+                font_name: 'assets/Poppins-Regular.ttf'        
+                font_size:'20sp'
+        MDFloatLayout:
+            size_hint: .85, .08
+            pos_hint: {'center_x':.61, 'center_y': .70}
+            canvas:
+                Color:                    
+                    rgb:(0, 0, 0, 1)
+                RoundedRectangle:
+                    size:(250,50)
+                    pos:self.pos
+                    radius:[15]
+            TextInput:     
+                id: course           
+                hint_text:'Course'                
+                size_hint: 1, None
+                size:120,50
+                pos_hint: {'center_x':.5, 'center_y': .5}
+                height: self.minimum_height
+                multiline:False
+                cursor_color: 1, 170/255, 23/255, 1
+                cursor_width: '2sp'
+                foreground_color: 1, 1, 1, 1              
+                background_color: 0,0,0,0
+                padding:15
+                font_name: 'assets/Poppins-Regular.ttf'        
+                font_size: '18sp'
+
+        MDFloatLayout:
+            size_hint: .65, .08
+            pos_hint: {'center_x':.80, 'center_y': .68}
+            MDLabel:
+                text:'Year'
+                pos_hint: {'center_x':.575, 'center_y': .88}
+                font_name: 'assets/Poppins-Regular.ttf'        
+                font_size:'20sp'
+
+        MDFloatLayout:
+            size_hint: .85, .08
+            pos_hint: {'center_x':1.1, 'center_y': .70}
+            canvas:
+                Color:                    
+                    rgb:(0, 0, 0, 1)
+                RoundedRectangle:
+                    size:(250,50)
+                    pos:self.pos
+                    radius:[15]
+            TextInput:
+                id: year                
+                hint_text:'Year'                
+                size_hint: 1, None
+                size:120,50
+                pos_hint: {'center_x':.5, 'center_y': .5}
+                height: self.minimum_height
+                multiline:False
+                cursor_color: 1, 170/255, 23/255, 1
+                cursor_width: '2sp'
+                foreground_color: 1, 1, 1, 1               
+                background_color: 0,0,0,0
+                padding:15
+                font_name: 'assets/Poppins-Regular.ttf'        
+                font_size: '18sp'
+           
+        ScrollView:
+            size_hint: 1, None
+            size: root.width, root.height - dp(100)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.100}
+            MDGridLayout:
+                id: student_info_container
+                cols: 1
+                spacing: dp(10)
+                size_hint_y: None
+                height: self.minimum_height
+                padding: dp(10)
+
+        MDFlatButton:
+            text: "Add"
+            pos_hint: {'center_x':.08, 'center_y': .10}
+            font_size: '18sp'
+            theme_text_color: "Custom"
+            text_color: 1, 1, 1, 1  # White text color
+            md_bg_color: 0.73,0.60,1.00  # Green background color
+            elevation_normal: 10 
+            line_color: 0, 0, 0, 1
+            line_width: 1
+            radius: [0]
+            on_release: app.add_student_info()
+
+        MDFlatButton:
+            text: "Edit"
+            pos_hint: {'center_x':.3, 'center_y': .10}
+            font_size: '18sp'
+            theme_text_color: "Custom"
+            text_color: 1, 1, 1, 1  # White text color
+            md_bg_color: 0.73,0.60,1.00  # Green background color
+            elevation_normal: 10
+            line_color: 0, 0, 0, 1
+            line_width: 1
+            radius: [0]
+            on_release: app.edit_student_info()
+
+        MDFlatButton:
+            text: "Delete"
+            pos_hint: {'center_x':.18, 'center_y': .10}
+            font_size: '18sp'
+            theme_text_color: "Custom"
+            text_color: 1, 1, 1, 1  # White text color
+            md_bg_color: 1, 0, 0, 1  # Red background color
+            elevation_normal: 10 
+            line_color: 0, 0, 0, 1
+            line_width: 1
+            radius: [0]
+            on_release: app.delete_student_info()
+
+        MDFlatButton:
+            text: "Close"
+            pos_hint: {'center_x':.93, 'center_y': .10}
+            font_size: '18sp'
+            theme_text_color: "Custom"
+            text_color: 1, 1, 1, 1  # White text color
+            md_bg_color: 1, 0, 0, 1  # Red background color
+            elevation_normal: 10  
+            line_color: 0, 0, 0, 1
+            line_width: 1
+            radius: [0]
+            on_release: app.stop()
